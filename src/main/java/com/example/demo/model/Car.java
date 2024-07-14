@@ -13,7 +13,7 @@ public class Car {
     private Long id;
     private String make;
     private String model;
-    private int year;
+    private int manufactureYear;
 
     public Long getId() {
         return id;
@@ -39,12 +39,12 @@ public class Car {
         this.model = model;
     }
 
-    public int getYear() {
-        return year;
+    public int getManufactureYear() {
+        return manufactureYear;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setManufactureYear(int manufactureYear) {
+        this.manufactureYear = manufactureYear;
     }
 
 }

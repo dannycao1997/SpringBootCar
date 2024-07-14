@@ -40,7 +40,7 @@ public class CarController {
             Car car = optionalCar.get();
             car.setMake(carDetails.getMake());
             car.setModel(carDetails.getModel());
-            car.setYear(carDetails.getYear());
+            car.setManufactureYear(carDetails.getManufactureYear());
             return ResponseEntity.ok(carRepository.save(car));
         } else {
             return ResponseEntity.notFound().build();
